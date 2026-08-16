@@ -4,10 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hoi Kwan Yeung — Software Developer</title>
-  <meta name="description" content="Software developer passionate about game engine development and C# .NET. Projects include Spark, SkyUI, LightMapper, MDWeb, and technical ebooks.">
+  <meta name="description" content="Software developer with experience in capital markets, enterprise systems, and game engine development. Projects include Spark, RainDB, SkyUI, MDWeb, and technical ebooks.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="alternate" hreflang="en" href="https://hoihky.github.io/index.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hoihky.github.io/zh/index.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://hoihky.github.io/zh-hant/index.html">
   <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
@@ -18,6 +21,8 @@
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#books">Books</a>
+        <a href="zh/index.html" hreflang="zh-Hans" class="lang-switch">简体中文</a>
+        <a href="zh-hant/index.html" hreflang="zh-Hant" class="lang-switch">繁體中文</a>
         <a href="https://github.com/hoihky" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </header>
@@ -43,21 +48,66 @@
               <a href="https://github.com/hoihky" target="_blank" rel="noopener">GitHub ↗</a>
               <a href="#projects">Projects</a>
               <a href="#books">Technical books</a>
+              <a href="zh/index.html" hreflang="zh-Hans">简体中文</a>
+              <a href="zh-hant/index.html" hreflang="zh-Hant">繁體中文</a>
             </div>
           </div>
         </section>
 
         <section id="about">
           <h2 class="section-title">About</h2>
-          <p class="section-lead">
-            I focus on systems where performance, tooling, and developer experience meet —
-            game engines, compile-time code generation, and documentation that teaches by building real software.
+          <p class="about-body">
+            I am a software developer with a career spanning capital markets, enterprise platforms,
+            and open-source systems programming. Today I am especially passionate about game engine
+            development and the C# / .NET ecosystem — but that work builds on years of shipping
+            production software where latency, reliability, and correctness mattered every trading day.
           </p>
+
+          <div class="career-grid">
+            <article class="career-card">
+              <h3>Capital markets</h3>
+              <p>
+                I have worked at a top-tier investment bank and a proprietary trading firm, building
+                and operating systems at the core of options and equity trading. That experience
+                covered order routing, pricing, risk, and the low-latency infrastructure that keeps
+                desks competitive — work where milliseconds and correctness are both non-negotiable.
+              </p>
+            </article>
+
+            <article class="career-card">
+              <h3>Enterprise software</h3>
+              <p>
+                Beyond finance, I have delivered large-scale business systems including a document
+                management platform, a call center solution, and Office productivity plugins.
+                These projects demanded robust workflows, integration with existing enterprise tools,
+                and UIs that non-technical users could rely on daily.
+              </p>
+            </article>
+
+            <article class="career-card">
+              <h3>Current focus</h3>
+              <p>
+                I now channel that systems background into open-source work: a C++ game engine,
+                .NET libraries, an embedded OLAP database, and technical books that teach by
+                building real software — from Vulkan rendering and Roslyn source generators to
+                cross-platform UI and design patterns in production codebases.
+              </p>
+            </article>
+          </div>
+
+          <p class="about-body">
+            Across domains, I gravitate toward problems where performance, tooling, and developer
+            experience intersect — whether that means a trading stack, an enterprise workflow, or
+            a game engine pipeline.
+          </p>
+
           <ul class="skill-list" aria-label="Technologies">
             <li>C++23</li>
             <li>Vulkan</li>
             <li>C# / .NET</li>
             <li>Roslyn</li>
+            <li>Low-latency systems</li>
+            <li>Options &amp; equities</li>
             <li>Avalonia</li>
             <li>TypeScript</li>
             <li>CMake</li>
@@ -156,6 +206,19 @@
             </article>
 
             <article class="project-card">
+              <h3><a href="https://github.com/hoihky/RainDB" target="_blank" rel="noopener">RainDB</a></h3>
+              <div class="project-meta">
+                <span class="tag">C#</span>
+                <span class="tag">OLAP</span>
+              </div>
+              <p>
+                Embedded columnar analytics database for .NET — vectorized execution, SQL and
+                planned LINQ over a shared query IR, DuckDB-inspired goals without leaving the runtime.
+              </p>
+              <p class="card-links"><a href="https://github.com/hoihky/RainDB" target="_blank" rel="noopener">Repository ↗</a></p>
+            </article>
+
+            <article class="project-card">
               <h3><a href="https://github.com/hoihky/MDWeb" target="_blank" rel="noopener">MDWeb</a></h3>
               <div class="project-meta">
                 <span class="tag">C#</span>
@@ -217,17 +280,17 @@
               <tr>
                 <td><strong>Vulkan Rendering</strong></td>
                 <td>Designing and implementing a real-time forward renderer with Vulkan, built alongside the Spark engine</td>
-                <td><a href="https://hoihky.github.io/vulkan-rendering-notes/site/" target="_blank" rel="noopener">Read online ↗</a></td>
+                <td><a href="https://hoihky.github.io/vulkan-rendering-notes/site/index.html" target="_blank" rel="noopener">Read online ↗</a></td>
               </tr>
               <tr>
                 <td><strong>Three.js &amp; NovaEngine</strong></td>
                 <td>TypeScript OOP, Three.js rendering, and building a modular ECS game engine from scratch</td>
-                <td><a href="https://hoihky.github.io/threejs-notes/threejs/site/" target="_blank" rel="noopener">Read online ↗</a></td>
+                <td><a href="https://hoihky.github.io/threejs-notes/threejs/site/index.html" target="_blank" rel="noopener">Read online ↗</a></td>
               </tr>
               <tr>
                 <td><strong>Modern C++</strong></td>
                 <td>C++11 through C++26 — OOP, move semantics, STL, templates, concurrency, and Spark engine examples</td>
-                <td><a href="https://hoihky.github.io/cpp-notes/c++/site/" target="_blank" rel="noopener">Read online ↗</a></td>
+                <td><a href="https://hoihky.github.io/cpp-notes/c++/site/index.html" target="_blank" rel="noopener">Read online ↗</a></td>
               </tr>
             </tbody>
           </table>
@@ -245,37 +308,42 @@
               <tr>
                 <td><strong>Roslyn SDK</strong></td>
                 <td>Syntax trees, symbols, scripting, source generators, and analyzers — with LightMapper examples</td>
-                <td><a href="https://hoihky.github.io/csharp-notes/roslyn/roslyn-site/" target="_blank" rel="noopener">Read online ↗</a></td>
+                <td><a href="https://hoihky.github.io/csharp-notes/roslyn/roslyn-site/index.html" target="_blank" rel="noopener">Read online ↗</a></td>
               </tr>
               <tr>
                 <td><strong>LINQ</strong></td>
                 <td>LINQ operators, EF Core, PLINQ, expression trees, and custom query engines</td>
-                <td><a href="https://hoihky.github.io/csharp-notes/linq/linq-site/" target="_blank" rel="noopener">Read online ↗</a></td>
+                <td><a href="https://hoihky.github.io/csharp-notes/linq/linq-site/index.html" target="_blank" rel="noopener">Read online ↗</a></td>
               </tr>
               <tr>
                 <td><strong>Data Structures</strong></td>
                 <td>BCL collections, immutable types, custom collections, from-scratch implementations </td>
-                <td><a href="https://hoihky.github.io/csharp-notes/datastructure/site/" target="_blank" rel="noopener">Read online ↗</a></td>
+                <td><a href="https://hoihky.github.io/csharp-notes/datastructure/site/index.html" target="_blank" rel="noopener">Read online ↗</a></td>
               </tr>
               <tr>
                 <td><strong>数据结构（中文）</strong></td>
                 <td>C# 数据结构与集合中文教程，与英文版对应</td>
-                <td><a href="https://hoihky.github.io/csharp-notes/datastructure-cn/datastructure-cn-site/" target="_blank" rel="noopener">Read online ↗</a></td>
+                <td><a href="https://hoihky.github.io/csharp-notes/datastructure-cn/datastructure-cn-site/index.html" target="_blank" rel="noopener">Read online ↗</a></td>
               </tr>
               <tr>
                 <td><strong>High Performance C#</strong></td>
                 <td>Low-latency C#, CLR mechanics, sample system architecture </td>
-                <td><a href="https://hoihky.github.io/csharp-notes/high-perf/high-perf-site/" target="_blank" rel="noopener">Read online ↗</a></td>
+                <td><a href="https://hoihky.github.io/csharp-notes/high-perf/high-perf-site/index.html" target="_blank" rel="noopener">Read online ↗</a></td>
               </tr>
               <tr>
                 <td><strong>Microsoft Agent Framework</strong></td>
                 <td>Building AI agents and multi-agent workflows with MAF in C#</td>
-                <td><a href="https://hoihky.github.io/csharp-notes/maf/maf-site/" target="_blank" rel="noopener">Read online ↗</a></td>
+                <td><a href="https://hoihky.github.io/csharp-notes/maf/maf-site/index.html" target="_blank" rel="noopener">Read online ↗</a></td>
               </tr>
               <tr>
                 <td><strong>Avalonia UI</strong></td>
                 <td>Avalonia fundamentals and building a cross-platform UI</td>
-                <td><a href="https://hoihky.github.io/csharp-notes/avalonia/site/" target="_blank" rel="noopener">Read online ↗</a></td>
+                <td><a href="https://hoihky.github.io/csharp-notes/avalonia/site/index.html" target="_blank" rel="noopener">Read online ↗</a></td>
+              </tr>
+              <tr>
+                <td><strong>Design Patterns</strong></td>
+                <td>SOLID principles and design patterns with examples from MDWeb, Spark, SkyUI, RainDB, and more</td>
+                <td><a href="https://hoihky.github.io/design-pattern-notes/site/index.html" target="_blank" rel="noopener">Read online ↗</a></td>
               </tr>
             </tbody>
           </table>
@@ -300,6 +368,7 @@
           <li><a href="#books">Technical books</a></li>
           <li class="toc-h3"><a href="#books">Graphics &amp; games</a></li>
           <li class="toc-h3"><a href="#books">C# &amp; .NET</a></li>
+          <li class="toc-h3"><a href="#books">Design patterns</a></li>
         </ul>
       </aside>
     </main>
